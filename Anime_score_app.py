@@ -219,7 +219,13 @@ if useSDuration:
     duration = st.number_input("Duration Minutes", min_value=1, max_value=168)
 else:
     duration = DurationDefault
-favorites = st.number_input("Favorites", min_value=0.0, max_value=236798.00)
+favorites = st.number_input(
+    "Favorites", 
+    min_value=0.0, 
+    max_value=236798.00,
+    step=0.01,
+    format="%.2f"
+)
 scoredby = st.number_input("Scored By", min_value=102.0, max_value=2980783.00)
 members = st.number_input("Members", min_value=209.00, max_value=4231885.00)
 
