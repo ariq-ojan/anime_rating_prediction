@@ -2,6 +2,8 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
+from sklearn.base import BaseEstimator, TransformerMixin
+from sklearn.preprocessing import MultiLabelBinarizer
 
 st.title("📺 MyAnimeList Score Predictor")
 
@@ -11,9 +13,6 @@ def load_model():
     with open("Anime_Score_model.sav", "rb") as f:
         model = pickle.load(f)
     return model
-
-from sklearn.base import BaseEstimator, TransformerMixin
-from sklearn.preprocessing import MultiLabelBinarizer
 
 class MultiLabelBinarizerTransformer(BaseEstimator, TransformerMixin):
     def __init__(self):
@@ -278,4 +277,5 @@ if st.button("Predict"):
         Provides an indication that the relative error of the model around **4.37%**.
         Which means the model has an accuracy of more than **95%**.
         """
+
     )
