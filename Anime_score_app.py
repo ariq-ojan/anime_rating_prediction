@@ -7,7 +7,7 @@ from sklearn.preprocessing import MultiLabelBinarizer
 
 st.title("📺 MyAnimeList Score Predictor")
 st.markdown("""
-### This tool uses a trained machine learning model to estimate an anime's MyAnimeList user rating score based on its metadata and engagement metrics.
+This tool uses a trained machine learning model to estimate an anime's MyAnimeList user rating score based on its metadata and engagement metrics.
 
 #### **How to use:**
 """)
@@ -320,3 +320,4 @@ if st.button("Predict"):
         Which means the model has an accuracy of more than **95%**.
         """
     )
+
