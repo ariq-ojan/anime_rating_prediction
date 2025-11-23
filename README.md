@@ -1,4 +1,4 @@
-# **Anime Rating Prediction with Machine Learning**
+# **📺 Anime Rating Prediction with Machine Learning**
 
 Most user generated ratings from streaming platforms are noisy, biased, and unreliable. Popularity spikes can inflate scores, and older, less-known titles have only a few votes. This inconsistencies hurt recommendation quality and content discovery for users. We aim to develop a more reliable and data-driven model to estimate expected audience score of animes. The insights can be used by platforms to improve their catalog management, content recommendations for users, and allocate marketing budget.
 
@@ -9,7 +9,7 @@ Most user generated ratings from streaming platforms are noisy, biased, and unre
 **Stakeholder**: Streaming platform product managers.
 
 ## **Objectives**
-1. Develop a machine learning model that predicts user score with high accuracy (RMSE < 0.5).
+1. Develop a machine learning model that predicts expected user score with high accuracy (RMSE < 0.5).
 2. Provide feature insights into what drives audience perception.
 
 ## **Evaluation Metrics**
@@ -53,3 +53,26 @@ Data used is the Top 15,000 Ranked Anime Dataset that was collected from MyAnime
 | favorites       | Number of users who marked this anime as a favorite. |
 | scored_by       | Number of users who rated the anime. |
 | members         | Number of users listed as members of the anime’s MAL community. |
+
+## How to Use
+You can the deployed web app for this project [here!](http://malratingpredictorojan2.streamlit.app)
+1. Use the search box to find your anime on MyAnimeList.
+2. From the anime page, copy the Members count and enter it into this tool.
+3. Fill in the remaining fields using information from the Information and Statistics sections.
+4. Click "Predict" to generate estimated user score.
+
+### ⚠️ Model Limitation
+- Currently limited to only MyAnimeList data and statistics.
+- Model will not accurately estimate low-rated scores (score < 5).
+
+----
+© 2025 Ariq Fauzan & Fauzan Hafizh  
+This project was designed, developed, and implemented by Ariq Fauzan and Fauzan Hafizh.
+All data used belongs to their respective owners. You’re free to use, modify, and distribute this project with proper attribution.
+
+Email:
+[mariqfauzan@gmail.com](mailto:mariqfauzan@gmail.com)
+[fhafizh2710@gmail.com](mailto:fhafizh2710@gmail.com)  
+LinkedIn:
+[Ariq Fauzan](https://www.linkedin.com/in/ariq-fauzan/)
+[Fauzan Hafizh](https://www.linkedin.com/in/fauzan-hafizh-2678a5252/?utm_source=share_via&utm_content=profile&utm_medium=member_ios)
