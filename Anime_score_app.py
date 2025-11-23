@@ -224,8 +224,7 @@ popularity = st.number_input(
     "popularity", 
     min_value=1, 
     max_value=22225,
-    step=0,
-    format="%d"
+    step=1
 )
 
 DurationDefault = 23
@@ -235,8 +234,7 @@ if useSDuration:
         "Duration Minutes", 
         min_value=1, 
         max_value=168,
-        step=0.01,
-        format="%.2f"
+        step=1
     )
 else:
     duration = DurationDefault
